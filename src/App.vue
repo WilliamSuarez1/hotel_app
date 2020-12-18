@@ -48,9 +48,9 @@ export default {
     },
 
     partners: function () { 
-      if (this.$route.name != "user_balance") {
+      if (this.$route.name != "user_parteners") {
         let username = localStorage.getItem("current_username");
-        this.$router.push({ name: "user_balance", params: { username: username } });
+        this.$router.push({ name: "user_partners", params: { username: username } });
       }
     },
 
